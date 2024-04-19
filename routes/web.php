@@ -9,6 +9,7 @@ use App\Http\Controllers\authentications\LoginBasic;
 use App\Http\Controllers\authentications\RegisterBasic;
 use App\Http\Controllers\Apps\AffiliateList;
 use App\Http\Controllers\Apps\AffiliateDetail;
+use App\Http\Controllers\Apps\PlanDetail;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,4 @@ Route::get('/auth/register-basic', [RegisterBasic::class, 'index'])->name('auth-
 
 Route::get('/app/affiliate/list', [AffiliateList::class, 'index'])->name('app-affiliate-list');
 Route::get('/app/affiliate/detail', [AffiliateDetail::class, 'index'])->name('app-affiliate-detail');
+Route::get('/app/plan/detail', [PlanDetail::class, 'index'])->name('app-plan-detail');

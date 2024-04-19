@@ -1,18 +1,16 @@
 @isset($pageConfigs)
-{!! Helper::updatePageConfig($pageConfigs) !!}
+    {!! Helper::updatePageConfig($pageConfigs) !!}
 @endisset
 @php
-$configData = Helper::appClasses();
+    $configData = Helper::appClasses();
 
-$customizerHidden = ($customizerHidden ?? '');
+    $customizerHidden = $customizerHidden ?? '';
 @endphp
 
-@extends('layouts/commonMaster' )
+@extends('layouts/commonMaster')
 
 @section('layoutContent')
-
-<!-- Content -->
-@yield('content')
-<!--/ Content -->
-
+    <!-- Content -->
+    @yield('content')
+    <!--/ Content -->
 @endsection

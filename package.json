@@ -5,7 +5,8 @@
   "license": "Commercial",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "watch": "vite build --watch"
   },
   "devDependencies": {
     "@babel/core": "7.23.7",
