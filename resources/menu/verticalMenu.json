@@ -1,6 +1,12 @@
 {
   "menu": [
     {
+      "url": "/app/plan/detail",
+      "name": "Detalle de Plan",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "plan-detail"
+    },
+    {
       "url": "/app/affiliate/list",
       "name": "Lista de Afiliados",
       "icon": "menu-icon tf-icons bx bx-home-circle",

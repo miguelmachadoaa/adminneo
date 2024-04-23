@@ -19,7 +19,7 @@
 
     <div class="row">
 
-        <div class="col-sm-9">
+        <div class="col-sm-12">
 
 
             <div class="card">
@@ -30,75 +30,95 @@
 
                             <li class="nav-item" role="presentation">
                                 <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab"
-                                    data-bs-target="#navs-left-cuenta" aria-controls="navs-left-cuenta" tabindex="-1"
-                                    aria-selected="true">Cuenta</button>
+                                    data-bs-target="#navs-left-datos" aria-controls="navs-left-datos" tabindex="-1"
+                                    aria-selected="true">Datos</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
-                                    data-bs-target="#navs-left-adherentes" aria-controls="navs-left-adherentes"
-                                    aria-selected="false" tabindex="-1">Adherentes</button>
+                                    data-bs-target="#navs-left-sericio-sepelio" aria-controls="navs-left-sericio-sepelio"
+                                    aria-selected="false" tabindex="-1">Sevicio de sepelio</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button type="button" class="nav-link " role="tab" data-bs-toggle="tab"
-                                    data-bs-target="#navs-left-servicios" aria-controls="navs-left-servicios"
-                                    aria-selected="false">Servicios</button>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <button type="button" class="nav-link " role="tab" data-bs-toggle="tab"
-                                    data-bs-target="#navs-left-pagos" aria-controls="navs-left-pagos"
-                                    aria-selected="false">Pagos</button>
+                                    data-bs-target="#navs-left-seguro-vida" aria-controls="navs-left-seguro-vida"
+                                    aria-selected="false">Seguro de Vida</button>
                             </li>
 
                             <li class="nav-item" role="presentation">
                                 <button type="button" class="nav-link " role="tab" data-bs-toggle="tab"
-                                    data-bs-target="#navs-left-historial" aria-controls="navs-left-historial"
-                                    aria-selected="false">Historial</button>
+                                    data-bs-target="#navs-left-cuota-social" aria-controls="navs-left-cuota-social"
+                                    aria-selected="false">Cuota social</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button type="button" class="nav-link " role="tab" data-bs-toggle="tab"
+                                    data-bs-target="#navs-adicionales" aria-controls="navs-adicionales"
+                                    aria-selected="false">Adicionales</button>
                             </li>
 
 
                             <li class="nav-item" role="presentation">
                                 <button type="button" class="nav-link " role="tab" data-bs-toggle="tab"
-                                    data-bs-target="#navs-left-notas" aria-controls="navs-left-notas"
-                                    aria-selected="false">Notas</button>
+                                    data-bs-target="#navs-left-carencias" aria-controls="navs-left-carencias"
+                                    aria-selected="false">Carencias</button>
                             </li>
 
+                            <li class="nav-item" role="presentation">
+                                <button type="button" class="nav-link " role="tab" data-bs-toggle="tab"
+                                    data-bs-target="#navs-left-aumentos" aria-controls="navs-left-aumentos"
+                                    aria-selected="false">Aumentos</button>
+                            </li>
 
+                            <li class="nav-item" role="presentation">
+                                <button type="button" class="nav-link " role="tab" data-bs-toggle="tab"
+                                    data-bs-target="#navs-left-especiales" aria-controls="navs-left-especiales"
+                                    aria-selected="false">Especiales</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button type="button" class="nav-link " role="tab" data-bs-toggle="tab"
+                                    data-bs-target="#navs-left-deudas" aria-controls="navs-left-deudas"
+                                    aria-selected="false">Deudas</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button type="button" class="nav-link " role="tab" data-bs-toggle="tab"
+                                    data-bs-target="#navs-left-pago-diferencial" aria-controls="navs-left-pago-diferencial"
+                                    aria-selected="false">Pago diferencial</button>
+                            </li>
 
                         </ul>
                         <div class="tab-content pt-0 mt-0" style="box-shadow: none; border:none">
 
-                            <div class="tab-pane fade active show" id="navs-left-cuenta" role="tabpanel">
+                            <div class="tab-pane fade active show" id="navs-left-datos" role="tabpanel">
 
                                 <div class="card" style="    border: none;    box-shadow: none;">
 
                                     <div class="card-header">
 
-                                        @include('apps.affiliate.bar', ['titulo' => 'Afiliado'])
+                                        @include('apps.affiliate.bar', ['titulo' => 'Datos del Plan'])
                                     </div>
 
                                     <div class="card-body">
-                                        @include('apps.affiliate.form')
+                                        @include('apps.plan.datos')
                                     </div>
-
-
                                 </div>
-
                             </div>
-                            <div class="tab-pane fade" id="navs-left-adherentes" role="tabpanel">
+
+                            <div class="tab-pane fade" id="navs-left-sericio-sepelio" role="tabpanel">
                                 <div class="card" style="    border: none;    box-shadow: none;">
                                     <div class="card-header">
-                                        @include('apps.affiliate.bar', ['titulo' => 'Adherentes'])
+                                        @include('apps.affiliate.bar', ['titulo' => 'Servicio de sepelio'])
                                     </div>
                                     <div class="card-body">
-                                        @include('apps.affiliate.adherentes')
+                                        @include('apps.plan.servicio')
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade " id="navs-left-servicios" role="tabpanel">
+                            <div class="tab-pane fade " id="navs-left-seguro-vida" role="tabpanel">
                                 <div class="card" style="    border: none;    box-shadow: none;">
                                     <div class="card-header">
-                                        @include('apps.affiliate.bar', ['titulo' => 'Servicios'])
+                                        @include('apps.affiliate.bar', ['titulo' => 'Seguro de Vida'])
                                     </div>
                                     <div class="card-body">
 
@@ -106,21 +126,20 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="navs-left-pagos" role="tabpanel">
+                            <div class="tab-pane fade" id="navs-left-cuota-social" role="tabpanel">
                                 <div class="card" style="    border: none;    box-shadow: none;">
                                     <div class="card-header">
-                                        @include('apps.affiliate.bar', ['titulo' => 'Pagos'])
+                                        @include('apps.affiliate.bar', ['titulo' => 'Cuota social'])
                                     </div>
                                     <div class="card-body">
-                                        @include('apps.affiliate.pagos')
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="navs-left-historial" role="tabpanel">
+                            <div class="tab-pane fade" id="navs-adicionales" role="tabpanel">
                                 <div class="card" style="    border: none;    box-shadow: none;">
                                     <div class="card-header">
-                                        @include('apps.affiliate.bar', ['titulo' => 'Historial'])
+                                        @include('apps.affiliate.bar', ['titulo' => 'Adicionales'])
                                     </div>
                                     <div class="card-body">
 
@@ -128,7 +147,57 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="navs-left-notas" role="tabpanel">
+                            <div class="tab-pane fade" id="navs-left-carencias" role="tabpanel">
+                                <div class="card" style="    border: none;    box-shadow: none;">
+                                    <div class="card-header">
+                                        @include('apps.affiliate.bar', ['titulo' => 'Carencias'])
+                                    </div>
+                                    <div class="card-body">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="navs-left-carencias" role="tabpanel">
+                                <div class="card" style="    border: none;    box-shadow: none;">
+                                    <div class="card-header">
+                                        @include('apps.affiliate.bar', ['titulo' => 'Aumentos'])
+                                    </div>
+                                    <div class="card-body">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="navs-left-aumentos" role="tabpanel">
+                                <div class="card" style="    border: none;    box-shadow: none;">
+                                    <div class="card-header">
+                                        @include('apps.affiliate.bar', ['titulo' => 'Especiales'])
+                                    </div>
+                                    <div class="card-body">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="navs-left-especiales" role="tabpanel">
+                                <div class="card" style="    border: none;    box-shadow: none;">
+                                    <div class="card-header">
+                                        @include('apps.affiliate.bar', ['titulo' => 'Deudas'])
+                                    </div>
+                                    <div class="card-body">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="navs-left-deudas" role="tabpanel">
+                                <div class="card" style="    border: none;    box-shadow: none;">
+                                    <div class="card-header">
+                                        @include('apps.affiliate.bar', ['titulo' => 'Pago Diferencial'])
+                                    </div>
+                                    <div class="card-body">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="navs-left-pago-diferencial" role="tabpanel">
                                 <div class="card" style="    border: none;    box-shadow: none;">
                                     <div class="card-header">
                                         @include('apps.affiliate.bar', ['titulo' => 'Notas'])
@@ -144,56 +213,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
-            <div class="card">
-                <div class="card-header">
-                    <nav class="navbar navbar-expand-lg bg-secondary" style="border-radius: 6px; height: 2em;">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="javascript:void(0)">Adherentes</a>
 
 
-                            <div class="collapse navbar-collapse" id="navbar-ex-6">
-
-                                <ul class="navbar-nav ms-lg-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="javascript:void(0);"><i
-                                                class="tf-icons navbar-icon bx bx-user"></i>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="javascript:void(0);"
-                                            data-bs-toggle="dropdown" aria-expanded="false"><i
-                                                class="tf-icons navbar-icon bx bx-cog"></i></a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="javascript:void(0)">Action</a>
-                                            <a class="dropdown-item" href="javascript:void(0)">Another action</a>
-                                            <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-                <div class="card-body">
-
-                    <div class="list-group list-group-flush">
-                        <a href="javascript:void(0);" class="list-group-item list-group-item-action">Bear claw cake
-                            biscuit</a>
-                        <a href="javascript:void(0);" class="list-group-item list-group-item-action">Soufflé pastry pie
-                            ice</a>
-                        <a href="javascript:void(0);" class="list-group-item list-group-item-action">Tart tiramisu
-                            cake</a>
-                        <a href="javascript:void(0);" class="list-group-item list-group-item-action">Bonbon toffee
-                            muffin</a>
-                        <a href="javascript:void(0);" class="list-group-item list-group-item-action">Dragée tootsie
-                            roll</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
     </div>
 
 
