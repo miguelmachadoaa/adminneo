@@ -22,7 +22,7 @@
         <div class="col-sm-12">
 
 
-            <div class="card">
+            <div class="">
                 <div class="card-boy">
 
                     <div class="nav-align-left mb-4">
@@ -132,6 +132,8 @@
                                         @include('apps.affiliate.bar', ['titulo' => 'Cuota social'])
                                     </div>
                                     <div class="card-body">
+                                        @include('apps.plan.social')
+
                                     </div>
                                 </div>
                             </div>
@@ -153,26 +155,19 @@
                                         @include('apps.affiliate.bar', ['titulo' => 'Carencias'])
                                     </div>
                                     <div class="card-body">
+                                        @include('apps.plan.carencias')
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="navs-left-carencias" role="tabpanel">
+
+                            <div class="tab-pane fade" id="navs-left-aumentos" role="tabpanel">
                                 <div class="card" style="    border: none;    box-shadow: none;">
                                     <div class="card-header">
                                         @include('apps.affiliate.bar', ['titulo' => 'Aumentos'])
                                     </div>
                                     <div class="card-body">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="navs-left-aumentos" role="tabpanel">
-                                <div class="card" style="    border: none;    box-shadow: none;">
-                                    <div class="card-header">
-                                        @include('apps.affiliate.bar', ['titulo' => 'Especiales'])
-                                    </div>
-                                    <div class="card-body">
+                                        @include('apps.plan.aumentos')
                                     </div>
                                 </div>
                             </div>

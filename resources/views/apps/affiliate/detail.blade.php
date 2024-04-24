@@ -22,7 +22,7 @@
         <div class="col-sm-9">
 
 
-            <div class="card">
+            <div class="">
                 <div class="card-boy">
 
                     <div class="nav-align-left mb-4">
