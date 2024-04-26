@@ -172,10 +172,21 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="navs-left-especiales" role="tabpanel">
+                            <div class="tab-pane fade" id="navs-left-deudas" role="tabpanel">
                                 <div class="card" style="    border: none;    box-shadow: none;">
                                     <div class="card-header">
                                         @include('apps.affiliate.bar', ['titulo' => 'Deudas'])
+                                    </div>
+                                    <div class="card-body">
+                                        @include('apps.plan.deudas')
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="navs-left-especiales" role="tabpanel">
+                                <div class="card" style="    border: none;    box-shadow: none;">
+                                    <div class="card-header">
+                                        @include('apps.affiliate.bar', ['titulo' => 'Especiales'])
                                     </div>
                                     <div class="card-body">
                                     </div>
@@ -195,10 +206,10 @@
                             <div class="tab-pane fade" id="navs-left-pago-diferencial" role="tabpanel">
                                 <div class="card" style="    border: none;    box-shadow: none;">
                                     <div class="card-header">
-                                        @include('apps.affiliate.bar', ['titulo' => 'Notas'])
+                                        @include('apps.affiliate.bar', ['titulo' => 'Pago Diferencial'])
                                     </div>
                                     <div class="card-body">
-                                        @include('apps.affiliate.notas')
+                                        @include('apps.plan.diferencial')
                                     </div>
                                 </div>
                             </div>

@@ -5,3 +5,9 @@
 .fv-plugins-icon-container .form-label {
   margin-bottom: 0 !important;
 }
+.nav-align-left > .nav .nav-item,
+.nav-align-left > div > .nav .nav-item {
+  margin-right: -1px;
+  margin-bottom: 0;
+  width: 12em;
+}
