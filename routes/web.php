@@ -7,6 +7,7 @@ use App\Http\Controllers\pages\Page2;
 use App\Http\Controllers\pages\MiscError;
 use App\Http\Controllers\authentications\LoginBasic;
 use App\Http\Controllers\authentications\RegisterBasic;
+use App\Http\Controllers\Apps\Affiliate;
 use App\Http\Controllers\Apps\AffiliateList;
 use App\Http\Controllers\Apps\AffiliateDetail;
 use App\Http\Controllers\Apps\PlanDetail;
@@ -36,6 +37,9 @@ Route::get('/pages/misc-error', [MiscError::class, 'index'])->name('pages-misc-e
 Route::get('/auth/login-basic', [LoginBasic::class, 'index'])->name('auth-login-basic');
 Route::get('/auth/register-basic', [RegisterBasic::class, 'index'])->name('auth-register-basic');
 
+Route::get('/app/affiliate/getAll', [Affiliate::class, 'getAll'])->name('app-affiliate-getAll');
+
 Route::get('/app/affiliate/list', [AffiliateList::class, 'index'])->name('app-affiliate-list');
-Route::get('/app/affiliate/detail', [AffiliateDetail::class, 'index'])->name('app-affiliate-detail');
+Route::get('/app/affiliate/detail/', [AffiliateDetail::class, 'index'])->name('app-affiliate-detail');
+Route::get('/app/affiliate/detail/{id}', [AffiliateDetail::class, 'index'])->name('app-affiliate-detail');
 Route::get('/app/plan/detail', [PlanDetail::class, 'index'])->name('app-plan-detail');

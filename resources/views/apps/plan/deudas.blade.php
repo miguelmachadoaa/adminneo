@@ -7,7 +7,9 @@
 
         <div class="col-sm-6" style="padding: 0em 2em 1em 2em;">
             <div class="row">
-                @include('apps.affiliate.bar', ['titulo' => 'Esquema'])
+                @include('apps.shared.bar', [
+                    'permiso' => $permisos['esquema'] ?? [],
+                ])
             </div>
             <div class="row">
                 <div class="col mt-4">
@@ -97,7 +99,9 @@
 
 
             <div class="row">
-                @include('apps.affiliate.bar', ['titulo' => 'Financiacion'])
+                @include('apps.shared.bar', [
+                    'permiso' => $permisos['financiacion'] ?? [],
+                ])
             </div>
             <div class="row mt-4">
                 <div class="col">

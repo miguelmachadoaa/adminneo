@@ -74,7 +74,7 @@
 
                                     <div class="card-header">
 
-                                        @include('apps.affiliate.bar', ['titulo' => 'Afiliado'])
+                                        @include('apps.shared.bar', ['permiso' => $permisos['cuentas']])
                                     </div>
 
                                     <div class="card-body">
@@ -88,7 +88,9 @@
                             <div class="tab-pane fade" id="navs-left-adherentes" role="tabpanel">
                                 <div class="card" style="    border: none;    box-shadow: none;">
                                     <div class="card-header">
-                                        @include('apps.affiliate.bar', ['titulo' => 'Adherentes'])
+                                        @include('apps.shared.bar', [
+                                            'permiso' => $permisos['adherentes'],
+                                        ])
                                     </div>
                                     <div class="card-body">
                                         @include('apps.affiliate.adherentes')
@@ -98,7 +100,9 @@
                             <div class="tab-pane fade " id="navs-left-servicios" role="tabpanel">
                                 <div class="card" style="    border: none;    box-shadow: none;">
                                     <div class="card-header">
-                                        @include('apps.affiliate.bar', ['titulo' => 'Servicios'])
+                                        @include('apps.shared.bar', [
+                                            'permiso' => $permisos['servicios'] ?? [],
+                                        ])
                                     </div>
                                     <div class="card-body">
 
@@ -109,7 +113,9 @@
                             <div class="tab-pane fade" id="navs-left-pagos" role="tabpanel">
                                 <div class="card" style="    border: none;    box-shadow: none;">
                                     <div class="card-header">
-                                        @include('apps.affiliate.bar', ['titulo' => 'Pagos'])
+                                        @include('apps.shared.bar', [
+                                            'permiso' => $permisos['pagos'] ?? [],
+                                        ])
                                     </div>
                                     <div class="card-body">
                                         @include('apps.affiliate.pagos')
@@ -120,7 +126,7 @@
                             <div class="tab-pane fade" id="navs-left-historial" role="tabpanel">
                                 <div class="card" style="    border: none;    box-shadow: none;">
                                     <div class="card-header">
-                                        @include('apps.affiliate.bar', ['titulo' => 'Historial'])
+                                        @include('apps.shared.bar', ['titulo' => 'Historial'])
                                     </div>
                                     <div class="card-body">
 
@@ -131,7 +137,7 @@
                             <div class="tab-pane fade" id="navs-left-notas" role="tabpanel">
                                 <div class="card" style="    border: none;    box-shadow: none;">
                                     <div class="card-header">
-                                        @include('apps.affiliate.bar', ['titulo' => 'Notas'])
+                                        @include('apps.shared.bar', ['titulo' => 'Notas'])
                                     </div>
                                     <div class="card-body">
                                         @include('apps.affiliate.notas')

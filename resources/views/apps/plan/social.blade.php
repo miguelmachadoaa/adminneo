@@ -4,7 +4,7 @@
 
         <div class="col-6" style="padding: 0em 2em 1em 2em;">
             <div class="row">
-                @include('apps.affiliate.bar', ['titulo' => 'Modalidad'])
+                @include('apps.shared.bar', ['titulo' => 'Modalidad'])
             </div>
             <div class="row mt-4">
                 <div class="col ">
@@ -68,7 +68,7 @@
 
         <div class="col-6" style="padding: 0em 2em 1em 2em;">
             <div class="row">
-                @include('apps.affiliate.bar', ['titulo' => 'Escala'])
+                @include('apps.shared.bar', ['titulo' => 'Escala'])
             </div>
             <div class="row mt-4">
                 <table class="table table-responsive">
@@ -130,7 +130,7 @@
         <div class="col-6" style="padding: 0em 2em 1em 2em;">
 
             <div class="row">
-                @include('apps.affiliate.bar', ['titulo' => 'Varios'])
+                @include('apps.shared.bar', ['titulo' => 'Varios'])
             </div>
             <div class="row mt-4">
 
@@ -155,7 +155,7 @@
         <div class="col-6" style="padding: 0em 2em 1em 2em;">
 
             <div class="row">
-                @include('apps.affiliate.bar', ['titulo' => 'Importe Fijos'])
+                @include('apps.shared.bar', ['titulo' => 'Importe Fijos'])
             </div>
             <div class="row mt-4">
 

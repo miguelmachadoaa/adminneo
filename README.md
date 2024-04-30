@@ -64,3 +64,15 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+//ejecucion de una funcion
+
+    //$sucursales = DB::select("select *    from  sucursales.suc_fn_sucursales_lectura()");
+
+    //ejecutar funcion con parametro
+
+    //$sucursales = DB::select("select *  from  afiliados.afi_fn_afiliados_por_cuenta(?)", ['1']);
+
+    //ejecucion de procedimiento almacenado
+
+    //$sucursales = Sucursales::suc_fn_sucursales_lectura();
