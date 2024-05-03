@@ -4,7 +4,9 @@
 
         <div class="col-6" style="padding: 0em 2em 1em 2em;">
             <div class="row">
-                @include('apps.shared.bar', ['titulo' => 'Modalidad'])
+                @include('apps.shared.bar', [
+                    'permiso' => $permisos['modalidad'] ?? [],
+                ])
             </div>
             <div class="row mt-4">
                 <div class="col ">
@@ -13,7 +15,7 @@
                         <label for="html5-text-input" class="col-md-2 col-form-label">Titular</label>
                         <div class="col-md-10">
                             <select class="form-control" name="titular" id="titular">
-                                <option value="">Rango Etario</option>
+                                <option value="">Seleccione</option>
                             </select>
                         </div>
                     </div>
@@ -22,7 +24,7 @@
                         <label for="html5-text-input" class="col-md-2 col-form-label">Conyuge</label>
                         <div class="col-md-10">
                             <select class="form-control" name="titular" id="titular">
-                                <option value="">Rango Etario</option>
+                                <option value="">Seleccione</option>
                             </select>
                         </div>
                     </div>
@@ -31,7 +33,7 @@
                         <label for="html5-text-input" class="col-md-2 col-form-label">Padres</label>
                         <div class="col-md-10">
                             <select class="form-control" name="Conyuge" id="Conyuge">
-                                <option value="">Rango Etario</option>
+                                <option value="">Seleccione</option>
                             </select>
                         </div>
                     </div>
@@ -40,7 +42,7 @@
                         <label for="html5-text-input" class="col-md-2 col-form-label">Hijos</label>
                         <div class="col-md-10">
                             <select class="form-control" name="Padres" id="Padres">
-                                <option value="">Rango Etario</option>
+                                <option value="">Seleccione</option>
                             </select>
                         </div>
                     </div>
@@ -49,7 +51,7 @@
                         <label for="html5-text-input" class="col-md-2 col-form-label">Hermanos</label>
                         <div class="col-md-10">
                             <select class="form-control" name="Padres" id="Padres">
-                                <option value="">Rango Etario</option>
+                                <option value="">Seleccione</option>
                             </select>
                         </div>
                     </div>
@@ -58,7 +60,7 @@
                         <label for="html5-text-input" class="col-md-2 col-form-label">Otros</label>
                         <div class="col-md-10">
                             <select class="form-control" name="Hijos" id="Hijos">
-                                <option value="">Rango Etario</option>
+                                <option value="">Seleccione</option>
                             </select>
                         </div>
                     </div>
@@ -68,7 +70,9 @@
 
         <div class="col-6" style="padding: 0em 2em 1em 2em;">
             <div class="row">
-                @include('apps.shared.bar', ['titulo' => 'Escala'])
+                @include('apps.shared.bar', [
+                    'permiso' => $permisos['escala'] ?? [],
+                ])
             </div>
             <div class="row mt-4">
                 <table class="table table-responsive">
@@ -130,7 +134,9 @@
         <div class="col-6" style="padding: 0em 2em 1em 2em;">
 
             <div class="row">
-                @include('apps.shared.bar', ['titulo' => 'Varios'])
+                @include('apps.shared.bar', [
+                    'permiso' => $permisos['varios'] ?? [],
+                ])
             </div>
             <div class="row mt-4">
 
@@ -155,9 +161,25 @@
         <div class="col-6" style="padding: 0em 2em 1em 2em;">
 
             <div class="row">
-                @include('apps.shared.bar', ['titulo' => 'Importe Fijos'])
+                @include('apps.shared.bar', [
+                    'permiso' => $permisos['importe-fijos'] ?? [],
+                ])
             </div>
             <div class="row mt-4">
+
+                <div class="mb-3 row">
+                    <label for="html5-text-input" class="col-md-4 col-form-label">Capital</label>
+                    <div class="col-md-8">
+                        <input type="number " step="1" min="0" class="form-control" id="">
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="html5-text-input" class="col-md-4 col-form-label">Reintegro</label>
+                    <div class="col-md-8">
+                        <input type="number " step="1" min="0" class="form-control" id="">
+                    </div>
+                </div>
 
                 <div class="mb-3 row">
                     <label for="html5-text-input" class="col-md-4 col-form-label">Carencia</label>

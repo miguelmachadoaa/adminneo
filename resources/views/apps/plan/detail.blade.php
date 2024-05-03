@@ -11,7 +11,7 @@
 @endsection
 
 @section('page-script')
-    @vite('resources/assets/js/app-user-list.js')
+    @vite('resources/assets/js/plan.js')
 @endsection
 
 @section('content')
