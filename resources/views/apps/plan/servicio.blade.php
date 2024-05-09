@@ -106,79 +106,41 @@
             </div>
             <div class="row mt-4">
 
-                <table class="table table-responsive tableRE">
-                    <tr class=" ">
-                        <td>Desde</td>
-                        <td>Hasta</td>
-                        <td>Importe</td>
-                        <td>Carencia</td>
-                        <td></td>
-                    </tr>
-                    <tr class="rowTable ">
-                        <td class="tdDesde">0</td>
-                        <td class="tdHasta">18</td>
-                        <td class="tdImporte">180.00</td>
-                        <td class="tdCarencia">0</td>
-                        <td><i class="bx bx-trash delRE"></i> <i class="bx bx-edit editRE"></i></td>
-                    </tr>
-                    <tr class="rowTable ">
-                        <td class="tdDesde">19</td>
-                        <td class="tdHasta">40</td>
-                        <td class="tdImporte">300.00</td>
-                        <td class="tdDesde">0</td>
-                        <td class=""><i class="bx bx-trash delRE"></i> <i class="bx bx-edit editRE"></i></td>
+                <div class="nav-align-top mb-4">
+                    <ul class="nav nav-pills mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button type="button" class="nav-link btn-outline-secondary active" role="tab"
+                                data-bs-toggle="tab" data-bs-target="#navs-pills-top-home"
+                                aria-controls="navs-pills-top-home" aria-selected="true">Rango Etario 1</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button type="button" class="nav-link btn-outline-secondary" role="tab"
+                                data-bs-toggle="tab" data-bs-target="#navs-pills-top-profile"
+                                aria-controls="navs-pills-top-profile" aria-selected="false" tabindex="-1">Rango
+                                Etario 2</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button type="button" class="nav-link btn-outline-secondary" role="tab"
+                                data-bs-toggle="tab" data-bs-target="#navs-pills-top-messages"
+                                aria-controls="navs-pills-top-messages" aria-selected="false" tabindex="-1">Rango
+                                Etario 3</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-0 m-0">
+                        <div class="tab-pane fade active show" id="navs-pills-top-home" role="tabpanel">
+                            @include('apps.plan.re', ['class' => 're_1_'])
+                        </div>
+                        <div class="tab-pane fade" id="navs-pills-top-profile" role="tabpanel">
+                            @include('apps.plan.re', ['class' => 're_2_'])
+                        </div>
+                        <div class="tab-pane fade" id="navs-pills-top-messages" role="tabpanel">
+                            @include('apps.plan.re', ['class' => 're_3_'])
+                        </div>
+                    </div>
+                </div>
 
-                    </tr>
-                    <tr class="rowTable ">
-                        <td class="tdDesde">41</td>
-                        <td class="tdHasta">55</td>
-                        <td class="tdImporte">350.00</td>
-                        <td class="tdCarencia">0</td>
-                        <td class=""><i class="bx bx-trash delRE"></i> <i class="bx bx-edit editRE"></i></td>
-
-                    </tr>
-                    <tr class="rowTable ">
-                        <td class="tdDesde">56</td>
-                        <td class="tdHasta">69</>
-                        <td class="tdImporte">400.00</td>
-                        <td class="tdCarencia">0</td>
-                        <td class=""><i class="bx bx-trash delRE"></i> <i class="bx bx-edit editRE"></i></td>
-                    </tr>
-                    <tr class="rowTable ">
-                        <td class="tdDesde">70</td>
-                        <td class="tdHasta">75</td>
-                        <td class="tdImporte">440.00</td>
-                        <td class="tdCarencia">0</td>
-                        <td class=""><i class="bx bx-trash delRE"></i> <i class="bx bx-edit editRE"></i></td>
-
-                    </tr>
-                </table>
-                <table>
-                    <tr class="rowTable ">
-                        <td colspan="4">
-                            Agregar:
-                        </td>
-                    </tr>
-
-                    <tr class="rowTable ">
-                        <td><input type="number" step="0.01" min="0" id="desde" name="desde"
-                                class="form-control"></td>
-                        <td><input type="number" step="0.01" min="0" id="hasta" name="hasta"
-                                class="form-control"></td>
-                        <td><input type="number" step="0.01" min="0" id="importe" name="importe"
-                                class="form-control"></td>
-                        <td><input type="number" step="0.01" min="0" id="carencia" name="carencia"
-                                class="form-control"></td>
-                        <td><button class="btn btn-primary btnSaveNewRE"><i class="bx bx-save "></i></button></td>
-
-                    </tr>
-
-                </table>
             </div>
         </div>
-
-
-
         <div class="col-6" style="padding: 0em 2em 1em 2em;">
 
             <div class="row">

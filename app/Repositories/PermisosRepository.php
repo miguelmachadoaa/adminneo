@@ -343,6 +343,7 @@ final class PermisosRepository{
                 [
                     'title'=>'Alta',
                     'icon'=>'plus',
+                    'class'=>'addRowRe',
                     'subs'=>[]
                 ],
                 [

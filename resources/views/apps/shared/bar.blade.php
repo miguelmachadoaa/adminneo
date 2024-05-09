@@ -30,7 +30,7 @@
                         @else
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0);"><i
-                                        class="tf-icons navbar-icon bx bx-{{ $link['icon'] }}"></i>
+                                        class=" {{ $link['class'] ?? '' }} tf-icons navbar-icon bx bx-{{ $link['icon'] }}"></i>
                                 </a>
                             </li>
                         @endif
