@@ -355,7 +355,7 @@ final class PermisosRepository{
             ]
         ],
         'varios'=>[
-            'title'=>'Varios',
+            'title'=>'Otros',
             'icon'=>'money',
             'links'=>[
                 [
@@ -492,6 +492,23 @@ final class PermisosRepository{
         ],
         'financiacion'=>[
             'title'=>'Financiacion',
+            'icon'=>'money',
+            'links'=>[
+                [
+                    'title'=>'Alta',
+                    'icon'=>'plus',
+                    'subs'=>[]
+                ],
+                [
+                    'title'=>'Modificacion',
+                    'icon'=>'save',
+                    'subs'=>[]
+                ],
+                
+            ]
+        ],
+        'planes'=>[
+            'title'=>'Planes',
             'icon'=>'money',
             'links'=>[
                 [

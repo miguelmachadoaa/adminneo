@@ -3,6 +3,12 @@ $(document).on('click', '.rowTable', function () {
   $(this).find('.botonesRE').removeClass('d-none');
 });
 
+$(document).on('click', '.inputRe', function () {
+  $('.botonesRE').addClass('d-none');
+  $(this).closest('.rowTable').find('.botonesRE').removeClass('d-none').removeClass('.readonly');
+  $(this).closest('.rowTable').find('.botonesRE');
+});
+
 $(document).on('click', '.editRE', function () {
   $(this).addClass('d-none');
   $(this).parent().find('.saveRE').removeClass('d-none');
@@ -10,10 +16,10 @@ $(document).on('click', '.editRE', function () {
 
   var ele = $(this).parent().parent().parent();
 
-  ele.find('.tdDesde').find('input').removeAttr('disabled');
-  ele.find('.tdHasta').find('input').removeAttr('disabled');
-  ele.find('.tdImporte').find('input').removeAttr('disabled');
-  ele.find('.tdCarencia').find('input').removeAttr('disabled');
+  ele.find('.tdDesde').find('input').removeAttr('readonly').removeClass('readonly');
+  ele.find('.tdHasta').find('input').removeAttr('readonly').removeClass('readonly');
+  ele.find('.tdImporte').find('input').removeAttr('readonly').removeClass('readonly');
+  ele.find('.tdCarencia').find('input').removeAttr('readonly').removeClass('readonly');
 });
 
 $(document).on('click', '.saveRE', function () {
@@ -22,10 +28,10 @@ $(document).on('click', '.saveRE', function () {
 
   var ele = $(this).parent().parent().parent();
 
-  ele.find('.tdDesde').find('input').attr('disabled', true);
-  ele.find('.tdHasta').find('input').attr('disabled', true);
-  ele.find('.tdImporte').find('input').attr('disabled', true);
-  ele.find('.tdCarencia').find('input').attr('disabled', true);
+  ele.find('.tdDesde').find('input').attr('readonly', true).addClass('readonly');
+  ele.find('.tdHasta').find('input').attr('readonly', true).addClass('readonly');
+  ele.find('.tdImporte').find('input').attr('readonly', true).addClass('readonly');
+  ele.find('.tdCarencia').find('input').attr('readonly', true).addClass('readonly');
 });
 
 $(document).on('click', '.delRE', function () {
@@ -58,4 +64,11 @@ $(document).on('click', '.addRowRe', function () {
   } else {
     ele.addClass('d-none');
   }
+});
+
+$(document).on('click', '.addPlan', function () {
+  console.log($(this).html());
+  console.log($('.cuentasHeader').find('navbar-brand').html());
+
+  $('.cuentasHeader').find('.navbar-brand').html($(this).html());
 });
